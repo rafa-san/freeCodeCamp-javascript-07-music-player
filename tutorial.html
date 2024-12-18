@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial</title>
+    <link rel="stylesheet" href="styles/style-tutorial.css" />
+  </head>
+
+  <body>
+    <h1 class="main-title">Tutorial</h1>
+
+    <div class="description-container">
+      <h1 id="content-start">Step 7</h1>
+      <div>
+        <section id="description">
+          <p>We've added the rest of the songs to the <code>allSongs</code> array for you.</p>
+          <p>Next, you'll learn about the <dfn>Web Audio API</dfn> and how to use it to play songs. All modern browsers support the Web Audio API, which lets you generate and process audio in web applications.</p>
+          <p>Use <code>const</code> to create a variable named <code>audio</code> and set it equal to <code>new Audio()</code>. This will create a new HTML5 <code>audio</code> element.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <h1 id="content-start">Step 9</h1>
+      <div>
+        <section id="description">
+          <p>Since users will be able to shuffle and delete songs from the playlist, you will need to create a copy of the <code>allSongs</code> array without mutating the original. This is where the <code>spread</code> operator comes in handy.</p>
+          <p>The spread operator (<code>...</code>) allows you to copy all elements from one array into another. It can also be used to concatenate multiple arrays into one. In the example below, both <code>arr1</code> and <code>arr2</code> have been spread into <code>combinedArr</code>:</p>
+
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> arr1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token keyword">const</span> arr2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+      
+            <span class="token keyword">const</span> combinedArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>arr1<span class="token punctuation">,</span> <span class="token operator">...</span>arr2<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>combinedArr<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Output: [1, 2, 3, 4, 5, 6]</span></code>
+            </pre>
+          </details>
+
+          <p>Inside the <code>userData</code> object create a <code>songs</code> property. For the value, spread <code>allSongs</code> into an array.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <h1 id="content-start">Step 11</h1>
+      <div>
+        <section id="description">
+          <p>In the previous projects, you used regular functions. But in the rest of the projects, you will be working with <dfn>arrow functions</dfn>. The next few steps will focus on teaching you the basics of arrow functions.</p>
+          <p>An arrow function is an anonymous function expression and a shorter way to write functions. Anonymous means that the function does not have a name. Arrow functions are always anonymous.</p>
+          <p>Here is the basic syntax:</p>
+          
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span></code>
+            </pre>
+          </details>
+
+          <p>To create a named arrow function, you can assign the function to a variable:</p>
+          
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">exampleFunction</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token comment">// code goes here</span>
+            <span class="token punctuation">}</span></code>
+            </pre>
+          </details>
+
+          <p>Create a new named arrow function called <code>printGreeting</code>. Inside the body of that function use the <code>console.log()</code> method to print the string <code>"Hello there!"</code>.</p>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
