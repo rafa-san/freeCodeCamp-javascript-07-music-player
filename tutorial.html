@@ -71,5 +71,266 @@
         </section>
       </div>
     </div>
+
+    <div class="description-container">
+      <h1 id="content-start">Step 13</h1>
+      <div>
+        <section id="description">
+          <p>Just like regular functions, arrow functions can accept multiple parameters.</p>
+          <p>Here is an example of a named arrow function with one parameter:</p>
+          
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">greet</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Hello, </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">!</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+          </details>
+
+          <p>If the function only has one parameter, you can omit the parentheses around the parameter list like this:</p>
+        
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">greet</span> <span class="token operator">=</span> <span class="token parameter">name</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Hello, </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">!</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+          </details>
+
+          <p>Create a new named arrow function called <code>printMessage</code> that has one parameter called <code>org</code>. Inside the body of that function, add a console statement. Inside that console statement, add the template literal <code>${org} is awesome!</code>.</p>
+          <p>Below your <code>printMessage</code> function, call the function and pass in the string <code>"freeCodeCamp"</code> as an argument.</p>
+          <p>Open up the console to see the result.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <h1 id="content-start">Step 14</h1>
+      <div>
+        <section id="description">
+          <p>Just like regular functions, arrow functions can return values.</p>
+          <p>Here is an example of an arrow function returning the result of multiplying two numbers:</p>
+          
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">multiplyTwoNumbers</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">num1<span class="token punctuation">,</span> num2</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> num1 <span class="token operator">*</span> num2<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            
+            <span class="token comment">// Output: 12</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">multiplyTwoNumbers</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> </code></pre>
+          </details>
+
+          <p>Create a new variable called <code>addTwoNumbers</code> and assign it an arrow function. This arrow function should take two parameters called <code>num1</code> and <code>num2</code>. Inside the body of the function, return the expression of adding <code>num1</code> and <code>num2</code>.</p>
+          <p>Below the <code>addTwoNumbers</code> function, add a console statement. Inside that console statement, call the <code>addTwoNumbers</code> function and pass in the numbers <code>3</code> and <code>4</code> as arguments.</p>
+          <p>Open up the console to see the output.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <h1 id="content-start">Step 15</h1>
+      <div>
+        <section id="description">
+          <p>If the arrow function is returning a simple expression, you can omit the <code>return</code> keyword and the curly braces <code>{}</code>. This is called an implicit return.</p>
+
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">multiplyTwoNumbers</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">num1<span class="token punctuation">,</span> num2</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> num1 <span class="token operator">*</span> num2<span class="token punctuation">;</span></code></pre>
+          </details>
+
+          <p>If your arrow function has multiple lines of code in the function body, then you need to use the <code>return</code> keyword and the curly braces <code>{}</code>.</p>
+          
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">getTax</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">price</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">const</span> taxRate <span class="token operator">=</span> <span class="token number">0.08</span><span class="token punctuation">;</span>
+            <span class="token keyword">const</span> tax <span class="token operator">=</span> price <span class="token operator">*</span> taxRate<span class="token punctuation">;</span>
+            <span class="token keyword">return</span> tax<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+          </details>
+
+          <p>Refactor, or update, your <code>addTwoNumbers</code> function to remove the <code>return</code> keyword and the curly braces <code>{}</code>. Your <code>addTwoNumbers</code> function should instead use an implicit return.</p>
+          <p>Open up the console to make sure that you are still getting the correct output.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <h1 id="content-start">Step 19</h1>
+      <div>
+        <section id="description">
+          <p>The <code>map()</code> method is used to iterate through an array and return a new array. It's helpful when you want to create a new array based on the values of an existing array. For example:</p>
+          
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token keyword">const</span> doubledNumbers <span class="token operator">=</span> numbers<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">number</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> number <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// doubledNumbers will be [2, 4, 6]</span></code></pre>
+          </details>
+
+          <p>Notice that the <code>map()</code> method takes a function as an argument. This is called a <dfn>callback function</dfn>, which is a function that is passed to another function as an argument. In the example above, the callback function is <code>(number) =&gt; number * 2</code>, and it's run on each element in the <code>numbers</code> array. The <code>map()</code> method then returns a new array with the results.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container mathjax-support">
+      <h1 id="content-start">Step 24</h1>
+      <div>
+        <section id="description">
+          <p>Right now the <code>songsHTML</code> is an array. If you tried to display this as is, you would see the songs separated by commas. This is not the desired outcome because you want to display the songs as a list. To fix this, you will need to join the array into a single string by using the <dfn>join()</dfn> method.</p>
+          <p>The <code>join()</code> method is used to concatenate all the elements of an array into a single string. It takes an optional parameter called a <code>separator</code> which is used to separate each element of the array. For example:</p>
+          
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> exampleArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"This"</span><span class="token punctuation">,</span> <span class="token string">"is"</span><span class="token punctuation">,</span> <span class="token string">"a"</span><span class="token punctuation">,</span> <span class="token string">"sentence"</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token keyword">const</span> sentence <span class="token operator">=</span> exampleArr<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Separator takes a space character</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>sentence<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Output: "This is a sentence"</span></code></pre>
+          </details>
+
+          <p>Chain the <code>join()</code> method to your <code>map()</code> method and pass in an empty string for the separator.</p>
+          <p>To chain multiple methods together, you can call the <code>join()</code> method on the result of the <code>map()</code> method. For example:</p>
+
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js">array<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+          </details>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container mathjax-support">
+      <h1 id="content-start">Step 26</h1>
+      <div>
+        <section id="description">
+          <p>Now you need to call the <code>renderSongs</code> function and pass in <code>userData?.songs</code> in order to finally display the songs in the UI.</p>
+          <p>Optional chaining (<code>?.</code>) helps prevent errors when accessing nested properties that might be null or undefined. For example:</p>
+          
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token punctuation">{</span>
+            &nbsp;<span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"Quincy"</span><span class="token punctuation">,</span>
+            &nbsp;<span class="token literal-property property">address</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            &nbsp;&nbsp;<span class="token literal-property property">city</span><span class="token operator">:</span> <span class="token string">"San Francisco"</span><span class="token punctuation">,</span>
+            &nbsp;&nbsp;<span class="token literal-property property">state</span><span class="token operator">:</span> <span class="token string">"CA"</span><span class="token punctuation">,</span>
+            &nbsp;&nbsp;<span class="token literal-property property">country</span><span class="token operator">:</span> <span class="token string">"USA"</span><span class="token punctuation">,</span>
+            &nbsp;<span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">;</span>
+      
+            <span class="token comment">// Accessing nested properties without optional chaining</span>
+            <span class="token keyword">const</span> state <span class="token operator">=</span> user<span class="token punctuation">.</span>address<span class="token punctuation">.</span>state<span class="token punctuation">;</span> <span class="token comment">// CA</span>
+      
+            <span class="token comment">// Accessing a non-existent nested property with optional chaining</span>
+            <span class="token keyword">const</span> zipCode <span class="token operator">=</span> user<span class="token punctuation">.</span>address<span class="token operator">?.</span>zipCode<span class="token punctuation">;</span> <span class="token comment">// Returns undefined instead of throwing an error</span></code></pre>
+          </details>
+
+          <p>Call the <code>renderSongs</code> function with the <code>songs</code> property of <code>userData</code>. This will render the songs in the playlist.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container mathjax-support">
+      <h1 id="content-start">Step 28</h1>
+      <div>
+        <section id="description">
+          <p>Now that you have the list of songs displayed on the screen, it would be nice to sort them in alphabetical order by title. You could manually update the <code>allSongs</code> array, but JavaScript has an array method you can use called <dfn>sort()</dfn>.</p>
+          <p>The <code>sort()</code> method converts elements of an array into strings and sorts them in place based on their values in the <code>UTF-16</code> encoding.</p>
+          
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> names <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"Tom"</span><span class="token punctuation">,</span> <span class="token string">"Jessica"</span><span class="token punctuation">,</span> <span class="token string">"Quincy"</span><span class="token punctuation">,</span> <span class="token string">"Naomi"</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            names<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// ["Jessica", "Naomi", "Quincy", "Tom"]</span></code></pre>
+          </details>
+          
+          <p>Inside your <code>sortSongs</code> function, add the <code>sort()</code> method to <code>userData?.songs</code>.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container mathjax-support">
+      <h1 id="content-start">Step 29</h1>
+      <div>
+        <section id="description">
+          <p>To sort the songs in alphabetical order by title, you will need to pass in a compare callback function into your <code>sort()</code> method.</p>
+          <p>Here is an example of sorting a list of fruits by name.</p>
+
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> fruits <span class="token operator">=</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"Apples"</span><span class="token punctuation">,</span> <span class="token literal-property property">price</span><span class="token operator">:</span> <span class="token number">0.99</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"Blueberries"</span><span class="token punctuation">,</span> <span class="token literal-property property">price</span><span class="token operator">:</span> <span class="token number">1.49</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"Grapes"</span><span class="token punctuation">,</span> <span class="token literal-property property">price</span><span class="token operator">:</span> <span class="token number">2.99</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">]</span><span class="token punctuation">;</span>
+      
+            fruits<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token punctuation">.</span>name <span class="token operator">&lt;</span> b<span class="token punctuation">.</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+      
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token punctuation">.</span>name <span class="token operator">&gt;</span> b<span class="token punctuation">.</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+      
+            <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+          </details>
+          <p>In the next few steps, you will learn what each of those <code>if</code> statements is doing inside that callback function. But for now, add an empty callback function to your <code>sort()</code> method and use <code>a</code> and <code>b</code> for the parameter names.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container mathjax-support">
+      <h1 id="content-start">Step 30</h1>
+      <div>
+        <section id="description">
+          <p>The <code>sort()</code> method accepts a compare callback function that defines the sort order.</p>
+          <p>In this example, the first condition <code>(a.name &lt; b.name)</code> checks if the name of the first fruit is less than the name of the second fruit. If so, the first fruit is sorted before the second fruit.</p>
+          <p>Strings are compared lexicographically which means they are compared character by character. For example, <code>"Apples"</code> is less than <code>"Bananas"</code> because <code>"A"</code> comes before <code>"B"</code> in the alphabet.</p>
+          <p>The reason why this example is returning numbers is because the <code>sort()</code> method is expecting a number to be returned. If you return a negative number, the first item is sorted before the second item.</p>
+          
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> fruits <span class="token operator">=</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"Apples"</span><span class="token punctuation">,</span> <span class="token literal-property property">price</span><span class="token operator">:</span> <span class="token number">0.99</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"Blueberries"</span><span class="token punctuation">,</span> <span class="token literal-property property">price</span><span class="token operator">:</span> <span class="token number">1.49</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"Grapes"</span><span class="token punctuation">,</span> <span class="token literal-property property">price</span><span class="token operator">:</span> <span class="token number">2.99</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">]</span><span class="token punctuation">;</span>
+      
+            fruits<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token punctuation">.</span>name <span class="token operator">&lt;</span> b<span class="token punctuation">.</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+      
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token punctuation">.</span>name <span class="token operator">&gt;</span> b<span class="token punctuation">.</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+      
+            <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+          </details>
+
+          <p>In the example, if <code>a.name</code> is equal to <code>b.name</code>, then the function returns <code>0</code>. This means that nothing changes and the order of <code>a</code> and <code>b</code> remains the same.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="description-container mathjax-support">
+      <h1 id="content-start">Step 36</h1>
+      <div>
+        <section id="description">
+          <p>The <dfn>find()</dfn> method retrieves the first element within an array that fulfills the conditions specified in the provided callback function. If no element satisfies the condition, the method returns <code>undefined</code>.</p>
+          <p>In the example below, the <code>find()</code> method is used to find the first number greater than 25:</p>
+          
+          <details class="code-details" open="">
+            <summary class="code-details-summary">Example Code</summary>
+            <pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+      
+            <span class="token comment">// Find the first number greater than 25</span>
+            <span class="token keyword">const</span> foundNumber <span class="token operator">=</span> numbers<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">number</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> number <span class="token operator">&gt;</span> <span class="token number">25</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>foundNumber<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Output: 30</span></code></pre>
+          </details>
+
+          <p>Use <code>const</code> to create a variable named <code>song</code> and assign it result of the <code>find()</code> method call on the <code>userData?.songs</code> array. Use <code>song</code> as the parameter of the <code>find()</code> callback and check if <code>song.id</code> is strictly equal to <code>id</code>.</p>
+          <p>This will iterate through the <code>userData?.songs</code> array, searching for a song that corresponds to the <code>id</code> passed into the <code>playSong</code> function.</p>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
